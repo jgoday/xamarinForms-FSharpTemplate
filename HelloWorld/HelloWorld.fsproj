@@ -4,13 +4,15 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <Import Project="../Configuration/Versions.xml" />
+
   <ItemGroup>
     <Compile Include="MainPage.fs" />
     <Compile Include="App.fs" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="3.0.0.482510" />
+    <PackageReference Include="Xamarin.Forms" Version="$(XamarinFormsVersion)" />
   </ItemGroup>
 
 </Project>
